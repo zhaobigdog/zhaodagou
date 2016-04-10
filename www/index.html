@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="author" content="Zhao_bigdog">
+        <meta name="description" content="videochat | peerconnection webrtc video chat">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Video Chat</title>
+        <link rel="stylesheet" href="styles/main.css">
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <link rel="icon" href="favicon.ico" type="image/x-icon">
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="banner">
+                Room:
+                <span id=roomname></span>
+                <span id="status"></span>
+            </div>
+            <div id="historyMsg">
+            </div>
+            <div class="controls" >
+                <div class="items">
+                    <input id="colorStyle" type="color" placeHolder='#000' title="font color" />
+					<div id=emoji title='emoji'></div>                   
+                    <label for="sendImage" class="imageLable" title='image'>
+                        <input id="sendImage" type="file" value="image" accept="image/*" />
+                    </label>
+                   <div id="clearBtn" title='clear'></div>					
+                </div>
+                <textarea id="messageInput" placeHolder="enter to send"></textarea>
+                <input id="sendBtn" type="button" value="SEND"/>
+                <div id="emojiWrapper" >
+                </div>
+            </div>
+        </div>
+        
+        <div id="videos">			    
+				    <div class="video_ele" id="video_ele_me" style="display: none;">		        	
+			        	<div class="video_ele_title">
+			            	<h3>video</h3>
+			          </div>	
+			          <div class="video_ele_cont clearfix">
+			          	<video id="me" autoplay></video>
+			          </div>
+		      	</div>      	
+			  </div>
+			  
+        <div id="loginWrapper">
+            <p id="info" style='color:#FFFFFF'>connecting to server...</p>
+            <div id="nickWrapper">
+                <div style="display: block; left: 520.5px; top: 69px;" id="login">
+					        	<div class="logo"><img src="content/logo.png" /><span>LOGIN</span></div>       	
+					          <ul class="login_form">
+					          	<li class="clearfix">
+				              	<label>name:</label>
+				                  <p><input value="" placeHolder="name" type="text" id="nicknameInput"></p>
+				              </li>
+					          	<li class="clearfix">
+				              	<label>room:</label>
+				                  <p><input value="" placeHolder="room" type="text" id="room" ></p>				                  
+				              </li>
+				              <p class=generate>random room number:<span onclick='generateRandomRoomNumber()'>Generate</span></p>
+					          </ul>
+					          <div class="clearfix">
+					          	<div id="loginBtn">login</div>       		
+					          </div>
+				        </div>
+            </div>
+        </div>
+        
+		  <div id="bg"><img src="images/blue_glow.jpg" /></div>
+		  <script src="scripts/jquery-1.11.2.js"></script>
+        <script src="scripts/prompt.js"></script>  
+        <script src="/socket.io/socket.io.js"></script>
+        <script src="scripts/main.js"></script>                  
+    </body>
+</html>

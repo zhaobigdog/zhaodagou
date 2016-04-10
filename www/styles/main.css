@@ -1,0 +1,284 @@
+html, body {
+    margin: 0;
+    font-family: sans-serif;
+    height: 100%;
+}
+
+ul ,p{
+	padding: 0px; 
+	margin: 0px;
+}
+ul li {
+	list-style-type: none;
+	list-style-image: none;
+}
+.wrapper {
+    width: 500px;
+    height: 100%;
+    margin-left: 0px;
+    margin-right: 2px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    BACKGROUND: url(../images/sidebar_bg.png) repeat;
+    float: right;
+    border-left: 1px solid #999999;
+    border-right: 1px solid #999999;
+		box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+		border-radius: 0 3px 3px 0;
+}
+#loginWrapper {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(5, 5, 5, .6);
+    text-align: center;
+    display: block;
+    padding-top: 200px;
+	margin: 0 auto;
+}
+#nickWrapper {
+    display: none;
+}
+#nickWrapper .logo {
+		border-bottom: 1px solid #9B9B9B;
+}
+#nickWrapper .logo span {
+		
+}
+#nickWrapper .logo img {
+		vertical-align:bottom	
+}
+.banner {
+    height: 50px;
+    width: 100%;
+    line-height: 50px;
+		padding-left: 4px;
+}
+.banner p {
+    float: left;
+    display: inline-block;
+}
+.controls {
+    height: 125px;
+    margin: 5px 0px;
+    position: relative;
+    margin-left: 5px;
+    margin-right: 2px;
+}
+#historyMsg {
+    height: 400px;
+    background-color: #fff;
+    overflow: auto;
+    padding: 2px;
+    margin-left: 5px;
+    margin-right: 2px;
+}
+#historyMsg img {
+    max-width: 99%;
+}
+.timespan {
+    color: #ddd;
+}
+.items {
+    height: 30px;
+	position: relative;
+}
+#colorStyle {
+    width: 50px;
+    border: none;
+    padding: 0;
+}
+/*custom the file input*/
+
+.imageLable {
+    position: relative;
+	position: absolute;
+	left: 120px;
+	bottom: 1px;
+	background-image: url(../images/image.png);
+	background-repeat: no-repeat;
+	width: 37px;
+	height: 31px;
+	cursor: pointer;
+}
+#sendImage {
+    position: absolute;
+    width: 52px;
+    left: 0;
+    opacity: 0;
+    overflow: hidden;
+}
+/*end custom file input*/
+
+#messageInput {
+    width: 436px;
+    max-width: 440px;
+    height: 90px;
+    max-height: 90px;
+    float:left;
+}
+#sendBtn {
+    width: 50px;
+    height: 98px;
+    float: right;
+}
+#emojiWrapper {
+    display: none;
+    width: 464px;
+    bottom: 135px;
+    position: absolute;
+    background-color: #e7e7e7;
+	box-shadow: 0 0 10px #565656;
+	border-radius: 2px;
+}
+#emojiWrapper img {
+    margin: 2px;
+    padding: 2px;
+    width: 25px;
+    height: 25px;
+}
+#emojiWrapper img:hover {
+    background-color: white;
+}
+#emoji {
+    background-image: url(../images/emoji.png);
+	background-repeat: no-repeat;
+	width: 32px;
+	height: 32px;
+	position: absolute;
+	left: 68px;
+	bottom: 0px;
+	cursor: pointer;
+}
+#clearBtn {
+	background-image: url(../images/clear.png);
+	background-repeat: no-repeat;
+	width: 32px;
+	height: 32px;
+	position: absolute;
+	left: 176px;
+	bottom: 0px;
+	cursor: pointer;
+}
+footer {
+    text-align: center;
+}
+
+#videos {
+		width: 50%;
+		height: 100%;
+}
+
+#login {
+		z-index: 101; border-bottom: #ccc 1px solid; position: absolute; border-left: #ccc 1px solid; padding-bottom: 0px; padding-left: 70px; width: 240px; padding-right: 70px; display: none; background: #f6f6f6; height: 320px; border-top: #ccc 1px solid; top: 150px; border-right: #ccc 1px solid; padding-top: 0px; left: 350px; -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px
+}
+
+.login_form {
+
+}
+
+.login_form li {
+    PADDING-BOTTOM: 7px;
+    PADDING-LEFT: 0px;
+    PADDING-RIGHT: 0px;
+    PADDING-TOP: 40px;
+}
+
+#login .login_form input {
+		border-bottom: #ccc 1px solid;
+		border-left: #ccc 1px solid;
+		padding-bottom: 2px;
+		line-height: 18px;
+		padding-left: 2px;
+		width: 170px;
+		padding-right: 2px;
+		height: 18px;
+		color: #868686;
+		border-top: #ccc 1px solid;
+		border-right: #ccc 1px solid;
+		padding-top: 2px;	
+}
+
+#login .login_form li p {
+    width: 175px;
+    float: left;
+}
+
+#login .login_form li label {
+    TEXT-ALIGN: right;
+    LINE-HEIGHT: 24px;
+    WIDTH: 50px;
+    PADDING-RIGHT: 10px;
+    FLOAT: left;
+}
+
+#login .generate {
+		font-size: 13px;
+		text-align: left;
+		padding-left: 6px;
+		color: #5A5353;
+}
+
+#login .generate span{
+		cursor: pointer;
+		text-decoration: underline;
+		text-decoration-color: #4e4e4e;
+}
+
+#loginBtn {
+		margin-top: 50px;
+		background-color: #7e7ece;
+		border-radius: 5px;
+		height: 30px;
+		line-height: 30px;
+		cursor: pointer;
+}
+	
+#bg {
+	z-index: -10; position: absolute; width: 100%; overflow: hidden; top: 0px; left: 0px
+}
+#bg img {
+	z-index: 2; position: absolute; display: block; top: 0px; left: 0px
+}
+
+#videos .video_ele {
+	z-index: 10; 
+	border-bottom: #999999 1px solid; 
+	position: absolute; 
+	border-left: #999999 1px solid; 
+	width: 300px; 
+	height: 249px;
+	background: #fff; 
+	border-top: #999999 1px solid; 
+	border-right: #999999 1px solid; 
+	border-radius: 5px 5px 0 0;
+	position: relative;
+	float: left;
+	margin: 1px;
+}
+
+#videos .video_ele .video_ele_title {
+	text-align: center; 
+	background: #eaeaea; 
+	height: 24px; 
+	cursor: move; 
+	border-radius: 5px 5px 0 0;
+}
+#videos .video_ele .video_ele_title h3 {
+	line-height: 24px; 
+	font-size: 12px;
+	margin: 0;
+	padding: 0;
+}
+
+#videos .video_ele .video_ele_cont {
+	width: 300px;
+	height: 227px;
+}
+
+#videos .video_ele .video_ele_cont video{
+	width: 300px;
+}
+
